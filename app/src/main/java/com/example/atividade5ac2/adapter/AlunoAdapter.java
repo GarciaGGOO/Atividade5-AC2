@@ -32,14 +32,14 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.AlunoViewHol
     @Override
     public void onBindViewHolder(@NonNull AlunoViewHolder holder, int position) {
         Aluno aluno = alunos.get(position);
-        holder.raTextView.setText(String.valueOf(aluno.getRa()));
-        holder.nomeTextView.setText(aluno.getNome());
-        holder.cepTextView.setText(aluno.getCep());
-        holder.logradouroTextView.setText(aluno.getLogradouro());
-        holder.complementoTextView.setText(aluno.getComplemento());
-        holder.bairroTextView.setText(aluno.getBairro());
-        holder.cidadeTextView.setText(aluno.getCidade());
-        holder.ufTextView.setText(aluno.getUf());
+        holder.raTextView.setText("RA: " + aluno.getRa());
+        holder.nomeTextView.setText("Nome: " + aluno.getNome());
+        holder.cepTextView.setText("CEP: " + aluno.getCep());
+        holder.logradouroTextView.setText("Logradouro: " + aluno.getLogradouro());
+        holder.complementoTextView.setText("Complemento: " + aluno.getComplemento());
+        holder.bairroTextView.setText("Bairro: " + aluno.getBairro());
+        holder.cidadeTextView.setText("Cidade: " + aluno.getCidade());
+        holder.ufTextView.setText("UF: " + aluno.getUf());
     }
 
     @Override
